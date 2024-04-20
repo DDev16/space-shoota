@@ -1,0 +1,9 @@
+
+#game-container {
+  width: 100%; // Ensure it doesn't exceed the viewport width
+  max-width: 800px; // Maximum size
+  margin: 0 auto; // Center horizontally
+  display: flex; // Use flex to center the content
+  justify-content: center;
+  align-items: center;
+}

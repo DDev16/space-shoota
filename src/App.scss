@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+.App {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #D9E6F6;
+  background-image: url('./rocket.gif'); /* Adjusted line */
+  background-size: contain;
+  background-repeat: no-repeat; /* To prevent the image from repeating */
+  background-position: center; /* Centers the background image */
+min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    background-position: top; /* Adjusted line */
+  }
+}
+
+
+header {
+  background-color: #0F3460;
+  width: 100%;
+    padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
+
+h1 {
+  color: #E94560;
+  text-shadow: 2px 2px #0F3460;
+}
+
+p {
+  color: #F0A500;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #E94560;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #F0A500;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+// Game Over styling
+.game-over {
+  color: #E94560;
+  h2 {
+    font-size: 2em;
+  }
+}
